@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function geturl(){
+				var str=location.href;
+				var loc=str.indexOf("=");
+				var url=str.substr(loc+1);
+				document.getElementById('myframe').src=url; 
+			}
+		</script>
+	</head>
+	<body>
+		<h1><font face="comic sans ms">God damn it shit!!!</font></h1>
+		<iframe id="myframe" width=1200 height=600 align="middle"></iframe>
+		<script type="text/javascript">
+			geturl();
+			function Refresh(){
+				location.reload();
+			}
+			setTimeout('Refresh()',3000);
+		</script>
+	</body>
+</html>

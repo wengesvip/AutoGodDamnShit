@@ -1,10 +1,17 @@
 <html>
-	<h1><font face="comic sans ms">God damn it shit!!!</font></h1>
-	<iframe id="myframe" width=1200 height=600 align="middle" src="https://school.etiantian.com/bhsf/teachercourse?m=toStudentCourseList" ></iframe>
-	<script language="JavaScript">
-		function Refresh(){
-			location.reload();
-		}
-		setTimeout('Refresh()',3000);
-	</script>
+	<head>
+		<script type="text/javascript">
+			function Jump(){
+				var str="do.html?url="+document.getElementById('url').value; 
+				window.location.href = str;
+			}
+		</script>
+	</head>
+	<body>
+		<h1><font face="comic sans ms">God damn it shit!!!</font></h1>
+		<input id="url" type="text" placeholder="请输入网址（一定要带上http://）" size=50></type>
+		<button onclick="Jump()">
+		    点击跳转
+		</button>
+	</body>
 </html>
